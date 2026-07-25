@@ -105,3 +105,4 @@ Each requirement is implemented in a separate SQL file and documented individual
 | 13 | Generate a reserved tables report for a specified date range | [View SQL](./database/queries/13-reserved-tables-report.sql) | [View Details](./docs/queries/13-reserved-tables-report.md) |
 | 14 | Validate and add a new order using a stored procedure | [View SQL](./database/queries/14-add-new-order.sql) | [View Details](./docs/queries/14-add-new-order.md) |
 | 15 | Retrieve future reserved tables using a temporary table | [View SQL](./database/queries/15-future-reserved-tables.sql) | [View Details](./docs/queries/15-future-reserved-tables.md) |
+| 16 | Log newly created reservations using an audit trigger | [View SQL](./database/queries/16-test-reservation-audit-trigger.sql) | [View Details](./docs/queries/16-reservation-audit-trigger.md) |
