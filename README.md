@@ -94,3 +94,4 @@ Each requirement is implemented in a separate SQL file and documented individual
 | 2 | Retrieve all employees holding the Manager position | [View SQL](database/queries/02-list-managers.sql) | [View Details](docs/queries/02-list-managers.md) |
 | 3 | List orders for a specific reservation with their associated menu items | [View SQL](database/queries/03-reservation-orders-menu-items.sql) | [View Details](docs/queries/03-reservation-orders-menu-items.md) |
 | 4 | List the menu items ordered by a specific reservation | [View SQL](database/queries/04-ordered-menu-items.sql) | [View Details](docs/queries/04-ordered-menu-items.md) |
+| 5 | Calculate the average order amount made through a specific employee | [View SQL](database/queries/05-average-order-amount-by-employee.sql) | [View Details](docs/queries/05-average-order-amount-by-employee.md) |
