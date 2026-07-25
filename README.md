@@ -105,7 +105,7 @@ Each requirement is implemented in a separate SQL file and documented individual
 | 13 | Generate a reserved tables report for a specified date range | [View SQL](./database/queries/13-reserved-tables-report.sql) | [View Details](./docs/queries/13-reserved-tables-report.md) |
 | 14 | Validate and add a new order using a stored procedure | [View SQL](./database/queries/14-add-new-order.sql) | [View Details](./docs/queries/14-add-new-order.md) |
 | 15 | Retrieve future reserved tables using a temporary table | [View SQL](./database/queries/15-future-reserved-tables.sql) | [View Details](./docs/queries/15-future-reserved-tables.md) |
-| 16 | Log newly created reservations using an audit trigger | [View SQL](./database/queries/16-test-reservation-audit-trigger.sql) | [View Details](./docs/queries/16-reservation-audit-trigger.md)
+| 16 | Log newly created reservations using an audit trigger | [View SQL](./database/queries/16-test-reservation-audit-trigger.sql) | [View Details](./docs/queries/16-reservation-audit-trigger.md)| 
 
 
 ## Query Plan Analysis (Part 1) 
@@ -113,19 +113,19 @@ Each requirement is implemented in a separate SQL file and documented individual
 - Query Plans - Part 1: Analysis of five complex SQL queries using SQL Server Actual Execution Plans.
   [View Details](./docs/queries/17-query-plans-part1.md)
 
-## Database Indexing
+## Database Indexing : 
 
-# SQL File
+### SQL File
 
-- [Create Performance Indexes](../../database/indexes/01-create-performance-indexes.sql)
+- [Create Performance Indexes](database/indexes/01-create-performance-indexes.sql)
 
-# Description
+### Description
 
 Nonclustered indexes were created after reviewing the queries, views, functions, and stored procedures implemented throughout the project.
 
 The selected indexes target columns frequently used in filtering, joins, grouping, aggregation, and date-range searches.
 
-# Indexes Created
+### Indexes Created
 
 - `IX_Reservations_CustomerId`
 - `IX_Reservations_RestaurantId`
@@ -135,7 +135,7 @@ The selected indexes target columns frequently used in filtering, joins, groupin
 - `IX_Employees_Position`
 - `IX_OrderItems_ItemId`
 
-# Rationale
+### Rationale
 
 The indexes were selected based on actual query usage rather than indexing every column.
 
