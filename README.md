@@ -83,6 +83,7 @@ From the root or project directory, run the generator script using Python or `uv
 # Using standard Python
 python generate_seed_data.py
 
+```
 ## SQL Queries
 
 Each requirement is implemented in a separate SQL file and documented individually.
