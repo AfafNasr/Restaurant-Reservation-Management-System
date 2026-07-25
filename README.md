@@ -92,3 +92,4 @@ Each requirement is implemented in a separate SQL file and documented individual
 |---|-------------|-----------|---------------|
 | 1 | Retrieve all reservations for a specific customer | [View SQL](database/queries/01-list-customer-reservations.sql) | [View Details](docs/queries/01-list-customer-reservations.md) |
 | 2 | Retrieve all employees holding the Manager position | [View SQL](database/queries/02-list-managers.sql) | [View Details](docs/queries/02-list-managers.md) |
+| 3 | List orders for a specific reservation with their associated menu items | [View SQL](database/queries/03-reservation-orders-menu-items.sql) | [View Details](docs/queries/03-reservation-orders-menu-items.md) |
