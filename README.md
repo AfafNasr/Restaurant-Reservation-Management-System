@@ -82,3 +82,11 @@ From the root or project directory, run the generator script using Python or `uv
 ```bash
 # Using standard Python
 python generate_seed_data.py
+
+## SQL Queries
+
+Each requirement is implemented in a separate SQL file and documented individually.
+
+| # | Requirement | SQL Query | Documentation |
+|---|-------------|-----------|---------------|
+| 1 | Retrieve all reservations for a specific customer | [View SQL](database/queries/01-list-customer-reservations.sql) | [View Details](docs/queries/01-list-customer-reservations.md) |
