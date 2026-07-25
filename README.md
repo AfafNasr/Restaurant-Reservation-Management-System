@@ -101,3 +101,4 @@ Each requirement is implemented in a separate SQL file and documented individual
 | 9 | Rank restaurants by reservation frequency | [View SQL](./database/queries/09-restaurant-popularity-ranking.sql) | [View Details](./docs/queries/09-restaurant-popularity-ranking.md) |
 | 10 | Identify the most popular menu item for each restaurant for a given month | [View SQL](./database/queries/10-popular-menu-item-analysis.sql) | [View Details](./docs/queries/10-popular-menu-item-analysis.md) |
 | 11 | Calculate the revenue of a specific restaurant using a function | [View SQL](./database/queries/11-calculate-restaurant-revenue.sql) | [View Details](./docs/queries/11-calculate-restaurant-revenue.md) |
+| 12 | Calculate employee salary using a function | [View SQL](./database/queries/12-calculate-employee-salary.sql) | [View Details](./docs/queries/12-calculate-employee-salary.md) |
