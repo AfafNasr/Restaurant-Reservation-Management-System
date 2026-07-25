@@ -113,4 +113,32 @@ Each requirement is implemented in a separate SQL file and documented individual
 - Query Plans - Part 1: Analysis of five complex SQL queries using SQL Server Actual Execution Plans.
   [View Details](./docs/queries/17-query-plans-part1.md)
 
-  
+## Database Indexing
+
+## SQL File
+
+- [Create Performance Indexes](../../database/indexes/01-create-performance-indexes.sql)
+
+## Description
+
+Nonclustered indexes were created after reviewing the queries, views, functions, and stored procedures implemented throughout the project.
+
+The selected indexes target columns frequently used in filtering, joins, grouping, aggregation, and date-range searches.
+
+## Indexes Created
+
+- `IX_Reservations_CustomerId`
+- `IX_Reservations_RestaurantId`
+- `IX_Reservations_ReservationDate`
+- `IX_Orders_ReservationId`
+- `IX_Orders_EmployeeId`
+- `IX_Employees_Position`
+- `IX_OrderItems_ItemId`
+
+## Rationale
+
+The indexes were selected based on actual query usage rather than indexing every column.
+
+Columns used as search predicates and join keys were chosen as index key columns, while frequently returned columns were added using `INCLUDE` to help reduce additional key lookups.
+
+
