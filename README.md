@@ -97,3 +97,4 @@ Each requirement is implemented in a separate SQL file and documented individual
 | 5 | Calculate the average order amount made through a specific employee | [View SQL](database/queries/05-average-order-amount-by-employee.sql) | [View Details](docs/queries/05-average-order-amount-by-employee.md) |
 | 6 | Retrieve reservations report using a view | [View SQL](database/queries/06-reservations-report.sql) | [View Details](docs/queries/06-retrieve-reservations-report.md) |
 | 7 | Retrieve employees information with their restaurant details using a view | [View SQL](database/queries/07-retrieve-employees-report.sql) | [View Details](./docs/queries/07-retrieve-employees-report.md) |
+| 8 | Identify reservations with two or more orders using a CTE | [View SQL](./database/queries/08-reservations-with-multiple-orders.sql) | [View Details](./docs/queries/08-reservations-with-multiple-orders.md) |
