@@ -99,3 +99,4 @@ Each requirement is implemented in a separate SQL file and documented individual
 | 7 | Retrieve employees information with their restaurant details using a view | [View SQL](database/queries/07-retrieve-employees-report.sql) | [View Details](./docs/queries/07-retrieve-employees-report.md) |
 | 8 | Identify reservations with two or more orders using a CTE | [View SQL](./database/queries/08-reservations-with-multiple-orders.sql) | [View Details](./docs/queries/08-reservations-with-multiple-orders.md) |
 | 9 | Rank restaurants by reservation frequency | [View SQL](./database/queries/09-restaurant-popularity-ranking.sql) | [View Details](./docs/queries/09-restaurant-popularity-ranking.md) |
+| 10 | Identify the most popular menu item for each restaurant for a given month | [View SQL](./database/queries/10-popular-menu-item-analysis.sql) | [View Details](./docs/queries/10-popular-menu-item-analysis.md) |
