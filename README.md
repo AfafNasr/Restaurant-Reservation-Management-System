@@ -91,3 +91,4 @@ Each requirement is implemented in a separate SQL file and documented individual
 | # | Requirement | SQL Query | Documentation |
 |---|-------------|-----------|---------------|
 | 1 | Retrieve all reservations for a specific customer | [View SQL](database/queries/01-list-customer-reservations.sql) | [View Details](docs/queries/01-list-customer-reservations.md) |
+| 2 | Retrieve all employees holding the Manager position | [View SQL](database/queries/02-list-managers.sql) | [View Details](docs/queries/02-list-managers.md) |
