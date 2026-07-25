@@ -6,8 +6,8 @@ Retrieve Reservations Report with Views: Use a view to list all reservations inf
 
 ## SQL Files
 
-- [View Definition](../../database/views/01-create-reservations-report-view.sql)
-- [Report Query](../../database/queries/06-retrieve-reservations-report.sql)
+- [View Definition](../../database/views/01-reservations-report-view.sql)
+- [Report Query](../../database/queries/06-reservations-report.sql)
 
 ## Description
 

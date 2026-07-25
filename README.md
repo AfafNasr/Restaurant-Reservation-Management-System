@@ -95,4 +95,4 @@ Each requirement is implemented in a separate SQL file and documented individual
 | 3 | List orders for a specific reservation with their associated menu items | [View SQL](database/queries/03-reservation-orders-menu-items.sql) | [View Details](docs/queries/03-reservation-orders-menu-items.md) |
 | 4 | List the menu items ordered by a specific reservation | [View SQL](database/queries/04-ordered-menu-items.sql) | [View Details](docs/queries/04-ordered-menu-items.md) |
 | 5 | Calculate the average order amount made through a specific employee | [View SQL](database/queries/05-average-order-amount-by-employee.sql) | [View Details](docs/queries/05-average-order-amount-by-employee.md) |
-| 6 | Retrieve reservations report using a view | [View Query](database/queries/06-retrieve-reservations-report.sql) | [View Details](docs/queries/06-retrieve-reservations-report.md) |
+| 6 | Retrieve reservations report using a view | [View SQL](database/queries/06-reservations-report.sql) | [View Details](docs/queries/06-retrieve-reservations-report.md) |
