@@ -104,3 +104,4 @@ Each requirement is implemented in a separate SQL file and documented individual
 | 12 | Calculate employee salary using a function | [View SQL](./database/queries/12-calculate-employee-salary.sql) | [View Details](./docs/queries/12-calculate-employee-salary.md) |
 | 13 | Generate a reserved tables report for a specified date range | [View SQL](./database/queries/13-reserved-tables-report.sql) | [View Details](./docs/queries/13-reserved-tables-report.md) |
 | 14 | Validate and add a new order using a stored procedure | [View SQL](./database/queries/14-add-new-order.sql) | [View Details](./docs/queries/14-add-new-order.md) |
+| 15 | Retrieve future reserved tables using a temporary table | [View SQL](./database/queries/15-future-reserved-tables.sql) | [View Details](./docs/queries/15-future-reserved-tables.md) |
