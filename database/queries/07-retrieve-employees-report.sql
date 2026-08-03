@@ -2,5 +2,5 @@ USE RestaurantReservationDB;
 GO
 
 SELECT *
-FROM vw_EmployeesReport;
+FROM dbo.vw_EmployeesReport;
 GO

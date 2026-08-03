@@ -4,7 +4,7 @@ GO
 USE RestaurantReservationDB;
 GO
 
-CREATE TABLE Restaurants
+CREATE TABLE dbo.Restaurants
 (
     RestaurantId INT IDENTITY(1,1) NOT NULL,
     Name NVARCHAR(100) NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE Restaurants
 );
 GO
 
-CREATE TABLE Customers
+CREATE TABLE dbo.Customers
 (
     CustomerId INT IDENTITY(1,1) NOT NULL,
     FirstName NVARCHAR(50) NOT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE Customers
 );
 GO
 
-CREATE TABLE Employees
+CREATE TABLE dbo.Employees
 (
     EmployeeId INT IDENTITY(1,1) NOT NULL,
     RestaurantId INT NOT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE Employees
 );
 GO
 
-CREATE TABLE Tables
+CREATE TABLE dbo.Tables
 (
     TableId INT IDENTITY(1,1) NOT NULL,
     RestaurantId INT NOT NULL,
@@ -71,7 +71,7 @@ CREATE TABLE Tables
 );
 GO
 
-CREATE TABLE MenuItems
+CREATE TABLE dbo.MenuItems
 (
     ItemId INT IDENTITY(1,1) NOT NULL,
     RestaurantId INT NOT NULL,
@@ -91,7 +91,7 @@ CREATE TABLE MenuItems
 );
 GO
 
-CREATE TABLE Reservations
+CREATE TABLE dbo.Reservations
 (
     ReservationId INT IDENTITY(1,1) NOT NULL,
     CustomerId INT NOT NULL,
@@ -116,7 +116,7 @@ CREATE TABLE Reservations
 );
 GO
 
-CREATE TABLE Orders
+CREATE TABLE dbo.Orders
 (
     OrderId INT IDENTITY(1,1) NOT NULL,
     ReservationId INT NOT NULL,
@@ -142,7 +142,7 @@ CREATE TABLE Orders
 );
 GO
 
-CREATE TABLE OrderItems
+CREATE TABLE dbo.OrderItems
 (
     OrderItemId INT IDENTITY(1,1) NOT NULL,
     OrderId INT NOT NULL,

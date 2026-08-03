@@ -9,10 +9,10 @@ SELECT
     mi.Name AS MenuItemName,
     oi.Quantity,
     mi.Price
-FROM Orders AS o
-INNER JOIN OrderItems AS oi
+FROM dbo.Orders AS o
+INNER JOIN dbo.OrderItems AS oi
     ON oi.OrderId = o.OrderId
-INNER JOIN MenuItems AS mi
+INNER JOIN dbo.MenuItems AS mi
     ON mi.ItemId = oi.ItemId
 WHERE o.ReservationId = 1;
 GO

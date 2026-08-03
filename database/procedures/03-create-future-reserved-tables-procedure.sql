@@ -27,7 +27,7 @@ BEGIN
         r.RestaurantId,
         r.ReservationDate,
         r.PartySize
-    FROM Reservations AS r
+    FROM dbo.Reservations AS r
     WHERE r.ReservationDate > GETDATE();
 
     SELECT
@@ -44,9 +44,9 @@ BEGIN
         res.PhoneNumber AS RestaurantPhoneNumber,
         res.OpeningHours
     FROM #FutureReservedTables AS frt
-    INNER JOIN Tables AS t
+    INNER JOIN dbo.Tables AS t
         ON frt.TableId = t.TableId
-    INNER JOIN Restaurants AS res
+    INNER JOIN dbo.Restaurants AS res
         ON frt.RestaurantId = res.RestaurantId
     ORDER BY frt.ReservationDate;
 END;

@@ -9,12 +9,12 @@ WITH MenuItemPopularity AS
         mi.ItemId,
         mi.Name AS MenuItemName,
         SUM(oi.Quantity) AS TotalQuantityOrdered
-    FROM Restaurants AS r
-    INNER JOIN MenuItems AS mi
+    FROM dbo.Restaurants AS r
+    INNER JOIN dbo.MenuItems AS mi
         ON r.RestaurantId = mi.RestaurantId
-    INNER JOIN OrderItems AS oi
+    INNER JOIN dbo.OrderItems AS oi
         ON mi.ItemId = oi.ItemId
-    INNER JOIN Orders AS o
+    INNER JOIN dbo.Orders AS o
         ON oi.OrderId = o.OrderId
     WHERE o.OrderDate >= '2026-01-01'
       AND o.OrderDate <  '2026-02-01'
@@ -37,7 +37,7 @@ RankedMenuItems AS
             PARTITION BY RestaurantId
             ORDER BY TotalQuantityOrdered DESC
         ) AS PopularityRank
-    FROM MenuItemPopularity
+    FROM dbo.MenuItemPopularity
 )
 SELECT
     RestaurantId,
@@ -46,7 +46,7 @@ SELECT
     MenuItemName,
     TotalQuantityOrdered,
     PopularityRank
-FROM RankedMenuItems
+FROM dbo.RankedMenuItems
 WHERE PopularityRank = 1
 ORDER BY RestaurantId;
 GO

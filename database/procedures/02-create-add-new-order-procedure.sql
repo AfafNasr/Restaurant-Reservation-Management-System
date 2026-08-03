@@ -11,7 +11,7 @@ BEGIN
     IF NOT EXISTS
     (
         SELECT 1
-        FROM Reservations
+        FROM dbo.Reservations
         WHERE ReservationId = @ReservationId
     )
     BEGIN
@@ -21,14 +21,27 @@ BEGIN
     IF NOT EXISTS
     (
         SELECT 1
-        FROM Employees
+        FROM dbo.Employees
         WHERE EmployeeId = @EmployeeId
     )
     BEGIN
         THROW 50002, 'The specified employee does not exist.', 1;
     END;
 
-    INSERT INTO Orders
+     IF NOT EXISTS
+    (
+        SELECT 1
+        FROM dbo.Reservations AS r
+        INNER JOIN dbo.Employees AS e
+            ON e.EmployeeId = @EmployeeId
+        WHERE r.ReservationId = @ReservationId
+            AND r.RestaurantId = e.RestaurantId
+    )
+    BEGIN
+         THROW 50003,  'The employee and reservation must belong to the same restaurant.',  1;
+    END;
+
+    INSERT INTO dbo.Orders
     (
         ReservationId,
         EmployeeId,
@@ -53,7 +66,7 @@ BEGIN
        o.EmployeeId,
        o.OrderDate,
        o.TotalAmount
-   FROM Orders AS o
+   FROM dbo.Orders AS o
    WHERE o.OrderId = @NewOrderId;
    END;
 GO

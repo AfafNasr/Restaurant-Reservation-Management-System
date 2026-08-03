@@ -8,6 +8,6 @@ SELECT
     TableId,
     ReservationDate,
     PartySize
-FROM Reservations
+FROM dbo.Reservations
 WHERE CustomerId = 1;
 GO

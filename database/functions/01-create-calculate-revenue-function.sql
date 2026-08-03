@@ -1,7 +1,7 @@
 USE RestaurantReservationDB;
 GO
 
-CREATE FUNCTION fn_CalculateRevenue
+CREATE FUNCTION dbo.fn_CalculateRevenue
 (
     @RestaurantId INT
 )
@@ -12,8 +12,8 @@ BEGIN
 
     SELECT
         @TotalRevenue = COALESCE(SUM(o.TotalAmount), 0)
-    FROM Reservations AS r
-    INNER JOIN Orders AS o
+    FROM dbo.Reservations AS r
+    INNER JOIN dbo.Orders AS o
         ON r.ReservationId = o.ReservationId
     WHERE r.RestaurantId = @RestaurantId;
 

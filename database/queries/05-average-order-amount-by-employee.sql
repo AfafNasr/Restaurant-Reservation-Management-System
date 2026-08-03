@@ -3,6 +3,6 @@ GO
 
 SELECT
     AVG(TotalAmount) AS AverageOrderAmount
-FROM Orders
+FROM dbo.Orders
 WHERE EmployeeId = 1;
 GO

@@ -7,6 +7,6 @@ SELECT
     e.LastName,
     e.Position,
     dbo.fn_CalculateEmployeeSalary(e.EmployeeId) AS Salary
-FROM Employees AS e
+FROM dbo.Employees AS e
 WHERE e.EmployeeId = 1;
 GO

@@ -18,10 +18,10 @@ BEGIN
         r.Name AS RestaurantName,
         r.Address AS RestaurantAddress,
         r.PhoneNumber AS RestaurantPhoneNumber
-    FROM Reservations AS res
-    INNER JOIN Tables AS t
+    FROM dbo.Reservations AS res
+    INNER JOIN dbo.Tables AS t
         ON res.TableId = t.TableId
-    INNER JOIN Restaurants AS r
+    INNER JOIN dbo.Restaurants AS r
         ON res.RestaurantId = r.RestaurantId
     WHERE res.ReservationDate >= @StartDate
       AND res.ReservationDate < DATEADD(DAY, 1, @EndDate)

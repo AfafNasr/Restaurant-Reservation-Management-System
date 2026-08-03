@@ -14,7 +14,7 @@ BEGIN
 
     SELECT
         @OrderCount = COUNT(OrderId)
-    FROM Orders
+    FROM dbo.Orders
     WHERE EmployeeId = @EmployeeId;
 
     SELECT
@@ -25,7 +25,7 @@ BEGIN
                 WHEN 'AssistantWaiter' THEN 3
                 ELSE 0
             END
-    FROM Employees
+    FROM dbo.Employees
     WHERE EmployeeId = @EmployeeId;
 
     SET @Salary = @OrderCount * @EmployeeRank;

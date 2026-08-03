@@ -198,11 +198,24 @@ def generate_employees() -> list[Employee]:
         "Taha", "Yasin", "Zaki", "Bishara", "Daoud", "Elias", "Khoury", "Musa",
     ]
 
+    waiter_positions = (
+        "VIPOrdersWaiter",
+        "StandardWaiter",
+        "AssistantWaiter",
+    )
+
     employees: list[Employee] = []
     employee_id = 1
+
     for restaurant_id in range(1, 51):
-        for position in ("Manager", "Server"):
+        positions = (
+            "Manager",
+            waiter_positions[(restaurant_id - 1) % len(waiter_positions)],
+        )
+
+        for position in positions:
             idx = employee_id - 1
+
             employees.append(
                 Employee(
                     employee_id=employee_id,
@@ -212,7 +225,9 @@ def generate_employees() -> list[Employee]:
                     position=position,
                 )
             )
+
             employee_id += 1
+
     return employees
 
 

@@ -6,13 +6,13 @@ WITH ReservationOrderCounts AS
     SELECT
         ReservationId,
         COUNT(OrderId) AS OrderCount
-    FROM Orders
+    FROM dbo.Orders
     GROUP BY ReservationId
 )
 SELECT
     ReservationId,
     OrderCount
-FROM ReservationOrderCounts
+FROM dbo.ReservationOrderCounts
 WHERE OrderCount >= 2;
 GO
 

@@ -7,6 +7,6 @@ SELECT
     FirstName,
     LastName,
     Position
-FROM Employees
+FROM dbo.Employees
 WHERE Position = 'Manager';
 GO
